@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/index.js" defer></script>
+    <title>FatHub</title>
+</head>
+
+<body>
+
+    <div class="main-box">
+        <h1 class="h1">BMI calculator</h1>
+        <form action="" class="position">
+            <div class="input">
+                <input class="input-field" type="text" id="your-height" name="height" placeholder="Height (cm):"
+                    >
+
+                <input class="input-field" type="text" id="your-weight" name="weight" placeholder="Weight (kg):"
+                    >
+            </div>
+            <div class="result-button-box">
+                <div class="output">
+                    <div class="output-box">
+                        <p class="placeholder-for-p">BMI:</p>
+                        <div class="inner_output" id="result1"></div>
+                    </div>
+                    <div class="output-box">
+                        <p class="placeholder-for-p">Result:</p>
+                        <p class="inner_output" id="result2"></p>
+                    </div>
+
+                </div>
+                <div class="button-box">
+                    <button class="button" id="clear" type="reset">Reset</button>
+                    <button class="button" id="calculate" type="button">Calculate</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>

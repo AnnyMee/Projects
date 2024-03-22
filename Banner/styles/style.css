@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: slategray;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 10px;
+}
+
+.banner-row {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.banner {
+    width: calc(33.33% - 20px);
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.genre {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ffc107;
+    padding: 6px 14px;
+    border-radius: 8px;
+}
+
+.movie-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(128, 128, 128, 0.349), black);
+    padding: 10px;
+    color: white;
+    width: 100%;
+    text-align: left;
+}
+
+.movie-details h3 {
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: #ffc107;
+}
+
+  .movie-details p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.movie-details p:hover{
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.year{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
