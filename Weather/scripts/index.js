@@ -139,6 +139,7 @@ const timeAndDate = (locationTime) => {
     ];
     const date = new Date(locationTime.location.localtime).getDay();
     time.textContent = days[date];
+    console.log(date);
 }
 
 const city = (city) => {
@@ -174,7 +175,7 @@ const date = () => {
         'December',
     ];
 
-    const dayDate = new Date().getDay();
+    const dayDate = new Date().getDate();
     const monthDate = new Date().getMonth();
     // console.log(dayDate);
 
